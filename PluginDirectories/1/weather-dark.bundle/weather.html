@@ -52,7 +52,7 @@
 	
 	function iconElementForWeatherCode(code, nighttime, size) {
 		// CLEAR_DAY, CLEAR_NIGHT, PARTLY_CLOUDY, PARTLY_CLOUDY_NIGHT, CLOUDY, RAIN, SLEET
-		var skycons = new Skycons({color: "black"});
+		var skycons = new Skycons({color: "white"});
 		var hundred = Math.floor(code / 100);
 		var codes = [
 		Skycons.CLEAR_DAY,
@@ -128,6 +128,10 @@
 	}
 	.day {
 		font-weight: bold;
+		color: rgba(255,255,255,.9);
+	}
+	.temp {
+		color: rgba(255,255,255,.9);
 	}
 	#today .temp,
 	#today .condition {
